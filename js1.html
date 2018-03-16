@@ -1,0 +1,33 @@
+<html>
+<head><title>JS EXP 1</title>
+<style type="text/css">
+	body{
+		background-color: #555;
+	}
+	p
+	{
+		color:white;
+		font-size: 50px; 
+	}
+</style>
+</head>
+<body>
+<p id="a"></p>
+
+<script>
+var d = new Date(); 
+var e = d.getHours();
+
+if(e>=5 && e<12)
+document.getElementById("a").innerHTML="Good Morning! Have a nice day ahead...";
+else if(e>=12 && e<16)
+document.getElementById("a").innerHTML="Good Afternoon!!!!";
+else if(e>=16 && e<20)
+document.getElementById("a").innerHTML="Good Evening!!!!";
+else if(e>=20||e<5)
+document.getElementById("a").innerHTML="Good Night! Sweet Dreams...";
+
+
+</script>
+</body>
+</html>
